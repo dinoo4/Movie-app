@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700;800&family=Roboto+Slab:wght@300;400;500;600&display=swap");
+
+* {
+	box-sizing: border-box;
+}
+
+:root {
+	--primary-color: #22254b;
+	--secondary-color: #373b69;
+}
+
+body {
+	background-color: var(--primary-color);
+	font-family: "Poppins", sans-serif;
+	margin: 0;
+}
+
+.navbar{
+	padding: 1 0;
+	background-color: var(--secondary-color)
+}
+
+a.navbar-brand{
+	font-weight: 700;
+	font-size: 30px;
+	padding-left: 55px;
+	color: white;
+}
+
+main {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.movie {
+	width: 300px;
+	margin: 1rem;
+	border-radius: 3px;
+	box-shadow: 0.2px 4px 5px rgba(0, 0, 0, 0.1);
+	background-color: var(--secondary-color);
+	position: relative;
+	overflow: hidden;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+}
+
+.movie img {
+	width: 100%;
+}
+
+.movie-info {
+	color: #eee;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0.5rem 1rem 1rem;
+	letter-spacing: 0.5px;
+}
+
+.movie-info h3 {
+	margin-top: 0;
+	font-size: small;
+}
+
+.movie-info span {
+	background-color: var(--primary-color);
+	padding: 0.25rem 0.5rem;
+	border-radius: 3px;
+	font-weight: bold;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+}
+
+.movie-info span.green {
+	color: lightgreen;
+}
+
+.movie-info span.orange {
+	color: orange;
+}
+
+.movie-info span.red {
+	color: red;
+}
+
+.releaseDate {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #fff;
+	padding: 1rem;
+	max-height: 100%;
+	transform: translateY(101%);
+	transition: transform 0.3s ease-in;
+	-webkit-transform: translateY(101%);
+	-moz-transform: translateY(101%);
+	-ms-transform: translateY(101%);
+	-o-transform: translateY(101%);
+	-webkit-transition: transform 0.3s ease-in;
+	-moz-transition: transform 0.3s ease-in;
+	-ms-transition: transform 0.3s ease-in;
+	-o-transition: transform 0.3s ease-in;
+}
+
+.movie:hover .releaseDate {
+	transform: translateY(0);
+	-webkit-transform: translateY(0);
+	-moz-transform: translateY(0);
+	-ms-transform: translateY(0);
+	-o-transform: translateY(0);
+}
